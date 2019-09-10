@@ -1,0 +1,15 @@
+@import "vendors/slick";
+@import "vendors/normalize";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/base";
+@import "base/buttons";
+
+@import "partials/header";
+@import "components/navigation";
+
+@import "partials/footer";
+ 
+@import "base/media";

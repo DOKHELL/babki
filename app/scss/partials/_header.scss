@@ -1,0 +1,46 @@
+$colors: (
+	white-color: $color3
+);
+.header {
+	padding: 30px 50px;
+	display: grid;
+	background:grey;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: #{$space-big - 5px};
+	align-items: center;
+	&__left {
+		display: grid;
+		grid-template-columns: 130px 3fr;
+		grid-column-gap: 20px;
+		&-logo {
+			@include transition(opacity);
+			&:hover {
+				opacity: .6;
+			}
+		}
+	}
+	&__right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		&-inner {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&-contact,
+		&-singUp {
+			margin-right: #{$space-medium - 5px};
+		}
+	}
+	&__contact-time {
+		color: map-get($colors, white-color);
+		display: block;
+	}
+	&__contact-phone {
+		@include transition(opacity);
+			&:hover {
+				opacity: .6;
+			}
+	}
+}

@@ -1,0 +1,103 @@
+$colors: (
+	bg: $color3,
+	text-color: $color2,
+	white-color: $color3
+);
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  color: map-get($colors, text-color);
+  font: 400 $font-size-medium/1.2 $primary-font;
+  background-color: map-get($colors, white-color);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: map-get($colors, white-color);
+  font-family: $primary-font--bold;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+h1 {
+	font-size: $font-size-large;
+	font-family: $primary-font--semibold;
+}
+h2 {
+	font-size: #{$font-size-big + 6px};
+}
+h3 {
+	font-size: #{$font-size-big};
+}
+h4 {
+	font-size: #{$font-size-medium + 2px};
+}
+h5 {
+	font-size: $font-size-medium;
+}
+h6 {
+	font-size: $font-size-small;
+}
+p {
+  margin-bottom: #{$space-medium -5px};
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: map-get($colors, white-color);
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+input,
+  textarea {
+    width: 100%;
+    padding: 8px 15px;
+  }
+  input {
+    margin-bottom: 15px;
+  }
+  textarea {
+    resize: none;
+  }
+input [type="email"],
+input [type="tel"],
+input[type="search"],
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
+}
+input [type="email"]{
+  &:invalid{
+  }
+}
+.container {
+  max-width: $container-size;
+  padding: 0 #{$space-small + 5px};
+  margin: 0 auto;
+}
