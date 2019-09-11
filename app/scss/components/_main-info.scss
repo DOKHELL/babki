@@ -31,4 +31,29 @@ $colors: (
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 60px 60px;
 	grid-gap: 10px;
+	select{
+		width: 100%;
+		padding: 20px 40px;
+	}
+}
+.icon{
+	position: relative;
+	&::after{
+		content: "\f041";
+		position: absolute;
+		font-size: 22px;
+		color: black;
+		top: 50%;
+		right: 20px;
+		transform: translate(0, -50%)
+	}
+	&::before{
+		content: "\f041";
+		position: absolute;
+		font-size: 22px;
+		color: black;
+		top: 50%;
+		left: 20px;
+		transform: translate(0, -50%)
+	}
 }

@@ -1,0 +1,21 @@
+$colors:(
+  black-text: $color2,
+);
+.question{
+  padding: 180px 0 200px;
+  &__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 100px;
+    color: map-get($colors, black-text);
+  }
+  &-item{
+    img{
+      width: 100%;
+      max-width: 100%;
+    }
+    h2{
+      
+    }
+  }
+}
