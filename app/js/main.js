@@ -18,7 +18,7 @@ function accordion() {
 
 function initHolderBg() {
   "use strict";
-  $('.slider__items .slider__item .slider__item-img').each(function () {
+  $('.main-info').each(function () {
     var imgHolder = $(this),
       img = imgHolder.find('img'),
       imgSrc = img.attr('src');

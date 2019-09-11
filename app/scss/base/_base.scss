@@ -28,6 +28,7 @@ h6 {
   font-family: $primary-font--bold;
   margin-bottom: 20px;
   line-height: 1.5;
+  margin-top: 0;
 }
 h1 {
 	font-size: $font-size-large;
@@ -49,7 +50,8 @@ h6 {
 	font-size: $font-size-small;
 }
 p {
-  margin-bottom: #{$space-medium -5px};
+  margin-bottom: #{$space-medium + 5px};
+  margin-top: 0;
   &:last-child {
     margin-bottom: 0;
   }
@@ -100,4 +102,9 @@ input [type="email"]{
   max-width: $container-size;
   padding: 0 #{$space-small + 5px};
   margin: 0 auto;
+}
+.container-small {
+	max-width: $container-size--small;
+	padding: 0 #{$space-small + 5px};
+	margin: 0 auto;
 }

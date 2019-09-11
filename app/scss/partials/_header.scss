@@ -4,10 +4,12 @@ $colors: (
 .header {
 	padding: 30px 50px;
 	display: grid;
-	background:grey;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: #{$space-big - 5px};
 	align-items: center;
+	width: 100%;
+	z-index: 100;
+	position: fixed;
 	&__left {
 		display: grid;
 		grid-template-columns: 130px 3fr;
